@@ -1,0 +1,13 @@
+The Stable Linux Kernel Tree, Delivering a Stable Platform on a
+Constantly Moving Base
+
+The Linux kernel development process has had a "stable" kernel branch
+for much of its lifespan. But, for the past 5 years, that branch has
+looked much different from what people consider "stable".
+
+This talk will go into how the different branches of the Linux kernel
+are developed, the reasoning and rules that govern the stable kernel
+branches, and why companies can, and should, rely and contribute to them
+in order to build and support their products.
+
+
