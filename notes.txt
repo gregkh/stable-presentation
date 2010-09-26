@@ -10,4 +10,34 @@ are developed, the reasoning and rules that govern the stable kernel
 branches, and why companies can, and should, rely and contribute to them
 in order to build and support their products.
 
+-------------------------------
 
+
+From: Linus Torvalds <torvalds <at> osdl.org>
+Subject: Re: RFD: Kernel release numbering
+Newsgroups: gmane.linux.kernel
+Date: 2005-03-03 16:23:39 GMT (5 years, 29 weeks, 3 days, 21 hours and 1 minute ago)
+
+<snip>
+
+I'll tell you what the problem is: I don't think you'll find anybody to do
+the parallell "only trivial patches" tree. They'll go crazy in a couple of
+weeks. Why? Because it's a _damn_ hard problem. Where do you draw the
+line? What's an acceptable patch? And if you get it wrong, people will
+complain _very_ loudly, since by now you've "promised" them a kernel that
+is better than the mainline. In other words: there's almost zero glory,
+there are no interesting problems, and there will absolutely be people who
+claim that you're a dick-head and worse, probably on a weekly basis.
+
+Anybody?
+
+From: Greg KH <greg <at> kroah.com>
+Subject: Re: RFD: Kernel release numbering
+Date: 2005-03-03 16:43:53 GMT
+
+> Anybody?
+
+Well, I'm one person who has said that this would be a very tough
+problem to solve.  And hey, I like tough problems, so I'll volunteer to
+start this.  If I burn out, I'll take the responsibility of finding
+someone else to take it over.
