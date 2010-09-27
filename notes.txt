@@ -12,6 +12,133 @@ in order to build and support their products.
 
 -------------------------------
 
+Hi, I'm Greg, and I'm a Linux kernel developer.
+
+I'm here to talk about the stable kernel tree, and how it fits into the
+rapidly changing Linux kernel development cycle.  I'm going to cover how
+the kernel used to be developed, how it currently works, and how you can
+help out.
+
+---
+
+First off lets look at some numbers for what the current kernel
+development process is creating:
+
+The kernel as of the 2.6.35 release, currently contains:
+	    33,315 files
+	13,470,000 lines
+
+
+This is a big project.
+
+Working on this, over the past year, was:
+	2,478 developers
+	  342 companies
+
+Which shows how large the community of developers is.
+
+Now the fun numbers:
+
+  11,600 lines added
+   5,000 lines removed
+   2,300 lines modified
+
+That's not bad, until you realize the time unit involved here:
+
+  per day for all of 2009
+
+that works out to:
+
+  5.51 changes per hour
+
+That's 24 hours a day, 7 days a week.
+
+That's a lot of change.  Linus is the fastest moving software project
+ever known in this history of computing.
+
+And this rapidly changing body of code is used by all of the different
+companies and users that Jim spoke about the first day here.  That's a
+huge change for how most companies viewed software and the traditional
+model of the "don't change it" type of engineering that used to go on.
+
+But then again, Linux has succeeded in ways that no other operating
+system ever has, so it makes sense that it has done so in a manner
+different than anything before.
+
+
+---
+
+Before getting into how the kernel development process works today, it's
+good to look back and see how it used to work, which will show how we
+got to what we now do.
+
+
+Let's start with the 2.0 release, way back in June of 1996.  After that
+version came out, in June of 1996, Linus released 21 releases before
+starting a "development" branch, called 2.1.
+
+2.1 was where the new development happened.  Over the next 2 1/3 years,
+releases happened every couple months, until finally, 2.2.0 was released
+after 141 releases.
+
+Then it all started over again.  2.2 was worked on for a bit, 28
+releases and 4 months later, 2.3.0 was started and it continued on for a
+bit shorter, just over 1 1/2 years and 58 releases.
+
+And again, it started over.
+
+The kernel branched and 2.5.0 was started 10 months and 15 kernels
+later.
+
+2.5 was hard.  Real hard.  We had all these ideas of things we wanted to
+do, we adopted new tools and were figuring out how to use them, we did
+all sorts of crazy development as a large number of us were now being
+paid to do this development, so we had more time to do it.
+
+And, because we all had more time to do this work, it took even longer.
+2.6.0 didn't come out until almost 3 years later, taking 86 releases.
+
+Because of the long development cycle, companies really wanted to use
+parts of the 2.5 kernel in their "stable" releases.  So they backported
+things from the 2.5 tree into the 2.4 trees, and started calling them
+"enterprise" kernel releases.  These releases were _hard_ to do by the
+distros and the developers in charge of them.  Usually the same
+developer had to make the changes in the 2.5 kernel and then turn around
+and try to figure out how to backport the changes to the 2.4 kernel for
+a distro to use.  It was a nightmare for the developers, something that
+none of them who lived through it ever wanted to do again.
+
+With the start of the 2.6 releases, we all settled into a cycle of bug
+fixes and waiting to see when Linus would open up the new development
+tree.  But, as we were waiting, a funny thing happened.  We realized
+that we had learned our tools and proceedures quite well, forcing a new
+development model on ourselves without even realizing it.
+
+Here's a list of some of the things we had done:
+	- one patch does one thing
+	- no patch breaks the build
+	- complete description of each patch.
+Because of this, we were now able to slowly start to change and evolve
+the kernel without breaking things.  Linus started releacing the -rc
+kernels in a predictable manner, and after one kernel summit, we
+codified all of this saying we would stick with what we had been doing
+over the past year, there would not be any more development branch at
+all, only releases with small release cycles.
+
+We set up some rules:
+	- new changes in the -rc1 kernel
+	- bugfixes afterwards
+	- a few -rc releases and then a new kernel comes out.
+
+Thie happened every 2-3 months like clockwork, and has for the past 7
+years.
+
+But, a few years into this model, some people started complaining 
+
+While developers were working on the 2.1 branch, fixes went into the 2.0
+branch until finally, 
+
+
 
 From: Linus Torvalds <torvalds <at> osdl.org>
 Subject: Re: RFD: Kernel release numbering
