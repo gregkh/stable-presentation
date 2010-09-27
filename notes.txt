@@ -133,11 +133,14 @@ We set up some rules:
 Thie happened every 2-3 months like clockwork, and has for the past 7
 years.
 
-But, a few years into this model, some people started complaining 
+But, one of the objections to this development model was the fact that
+for that 2-3 months, there was no "stable" tree.  If a security problem
+happened, or a bugfix that was really needed, users had to wait for the
+three months, or brave using a development kernel.
 
-While developers were working on the 2.1 branch, fixes went into the 2.0
-branch until finally, 
-
+So, some people proposed a "backport" kernel that might track the last
+version, but Linus quickly said that there was no way this was going to
+work out, and anyone who tried to do so was insane:
 
 
 From: Linus Torvalds <torvalds <at> osdl.org>
@@ -158,7 +161,9 @@ claim that you're a dick-head and worse, probably on a weekly basis.
 
 Anybody?
 
-From: Greg KH <greg <at> kroah.com>
+------------------
+
+From: Greg KH <greg@kroah.com>
 Subject: Re: RFD: Kernel release numbering
 Date: 2005-03-03 16:43:53 GMT
 
@@ -168,6 +173,49 @@ Well, I'm one person who has said that this would be a very tough
 problem to solve.  And hey, I like tough problems, so I'll volunteer to
 start this.  If I burn out, I'll take the responsibility of finding
 someone else to take it over.
+
+
+-----------------------
+
+From: Chris Wright <chrisw@osdl.org>
+Subject: Re: RFD: Kernel release numbering
+Date: 2005-03-03 16:55:33 GMT
+
+> Anybody?
+
+Andres Salomon (-as patches) and I have been talking about that at least
+regarding security fixes.  It's worth trying in a more complete and
+formalized way.  Guess I can be branded a sucker :)
+
+-
+
+
+So that started the "stable" tree.
+
+It would last only as long as the development cycle of the previous
+kernel.
+
+The rules were set pretty strict:
+
+- It must be obviously correct and tested.
+- It cannot be bigger than 100 lines, with context.
+- It must fix only one thing.
+- It must fix a real bug that bothers people (not a, "This could be a
+  problem..." type thing).
+- It must fix a problem that causes a build error (but not for things
+  marked CONFIG_BROKEN), an oops, a hang, data corruption, a real
+  security issue, or some "oh, that's not good" issue.  In short,
+  something critical.
+- New device IDs and quirks are also accepted.
+- No "theoretical race condition" issues, unless an explanation of how
+  the race can be exploited is also provided.
+- It cannot contain any "trivial" fixes in it (spelling changes,
+  whitespace cleanups, etc).
+- It must follow the Documentation/SubmittingPatches rules.
+- It or an equivalent fix must already exist in Linus' tree (upstream).
+
+Since this has been set up, we've done over 360 kernel releases for the
+past 5 1/2 years for the stable team.
 
 
 The stable kernel update history (since the stable kernel process was
@@ -204,4 +252,32 @@ KERNEL  UPDATES  FIXES
 2.6.33        7    883
 2.6.34        7    601
 2.6.35        4    228
+
+
+If you note, a few kernels seem to contain a lot more releases than
+others.  After a few years of doing this work, it turned out that the
+distros were starting to rely on the stable releases to get updates from
+the kernel development team.
+
+The 2.6.16 kernel was the first experiment in keeping the tree open for
+longer than just a few release cycles.  It lived for a bit over 2 years.
+
+The 2.6.27 kernel was the second one of these, and it's still alive,
+getting a release last week.
+
+About last year, a number of the developers who worked for the distros
+got together and figured out that if they all picked one kernel version,
+it would make their lives much easier.  This resulted in the 2.6.32
+kernel release being picked up by Debian, Red Hat, and SuSE for their
+"long-term enterprise" kernel releases.  Canonical and Oracle have since
+also picked up on this and have based releases on this version as well.
+
+This makes the management and support of the kernel for these releases
+much easier.  The Debian, RedHat, SuSE and Oracle developers have been
+working to put the fixes that they have found are needed for the .32
+releases into the upstream -stable release as well.  This lowers the
+number of patches that they have to maintain, and offers the fixes to
+all other users as well, making everyone's lives easier.
+
+
 
