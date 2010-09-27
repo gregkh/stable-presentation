@@ -41,3 +41,40 @@ Well, I'm one person who has said that this would be a very tough
 problem to solve.  And hey, I like tough problems, so I'll volunteer to
 start this.  If I burn out, I'll take the responsibility of finding
 someone else to take it over.
+
+
+The stable kernel update history (since the stable kernel process was
+introduced after the 2.6.11 release) looks like this:
+
+                 TOTAL
+KERNEL  UPDATES  FIXES
+2.6.11       12     79
+2.6.12        6     53
+2.6.13        5     44
+2.6.14        7     96
+2.6.15        7    110
+
+2.6.16       62   1053
+2.6.17       14    191
+2.6.18        8    240
+2.6.19        7    189
+2.6.20       21    447
+
+2.6.21        7    162
+2.6.22       19    379
+2.6.23       16    302
+2.6.24        7    246
+2.6.25       20    492
+
+2.6.26        8    321
+2.6.27       53   1553
+2.6.28       10    613
+2.6.29        6    383
+2.6.30       10    419
+
+2.6.31       14    826
+2.6.32       21   1793
+2.6.33        7    883
+2.6.34        7    601
+2.6.35        4    228
+
