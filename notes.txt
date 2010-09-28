@@ -327,4 +327,10 @@ Review cycle:
  - new stable release happens
 
 
+Get Involved
+
+ - tag your patches
+ - stable-commits@vger.kernel.org
+ - stable-review@kernel.org
+
 
