@@ -195,6 +195,10 @@ So that started the "stable" tree.
 It would last only as long as the development cycle of the previous
 kernel.
 
+[Show slides that describe how the kernel now is developed]
+
+---------
+
 The rules were set pretty strict:
 
 - It must be obviously correct and tested.
@@ -217,6 +221,7 @@ The rules were set pretty strict:
 Since this has been set up, we've done over 360 kernel releases for the
 past 5 1/2 years for the stable team.
 
+------------
 
 The stable kernel update history (since the stable kernel process was
 introduced after the 2.6.11 release) looks like this:
@@ -242,16 +247,16 @@ KERNEL  UPDATES  FIXES
 2.6.25       20    492
 
 2.6.26        8    321
-2.6.27       53   1553
+2.6.27       54   1584
 2.6.28       10    613
 2.6.29        6    383
 2.6.30       10    419
 
 2.6.31       14    826
-2.6.32       21   1793
+2.6.32       23   2003
 2.6.33        7    883
 2.6.34        7    601
-2.6.35        4    228
+2.6.35        6    442
 
 
 If you note, a few kernels seem to contain a lot more releases than
@@ -278,6 +283,48 @@ working to put the fixes that they have found are needed for the .32
 releases into the upstream -stable release as well.  This lowers the
 number of patches that they have to maintain, and offers the fixes to
 all other users as well, making everyone's lives easier.
+
+
+As you can see, the .32 kernel also has the most number of individual
+patches for a stable release as well.  This is due to the large number
+of patches that the distros have been digging up and passing on to me.
+I'd really like to thank the Debian and Red Hat and Novell developers
+for doing this work, as it has been a great help and it shows how strong
+the community is, even when working for different companies that
+compete, they work together to create something better overall that they
+couldn't have done individually.
+
+
+-----------
+
+So, how do you get a patch into the stable tree.
+
+Once again, look at the stable_kernel_rules.txt file:
+  - add "Cc: <stable@kernel.org>" to the Signed-off-by: area of your
+    patch.
+  - send the git commit id of the patch to stable@kernel.org and state
+    which stable kernel tree you want it applied to.
+
+It's that simple.  If you are a subsystem maintainer, you should start
+thinking about this when you add patches to your trees for merging.  If
+you notice that the patch fixes a bug, or adds a new device id,  mark it
+with a Cc: tag.  Some subsystem maintainers are very good about this,
+and others, very bad.  Networking has a wonderful maintainer, David
+Miller, who actually creates a separate patch queue that he tests out
+before sending the patches on to me, which is a great help.  KVM also
+creates a git tree to help out with this, and they do a lot of testing
+as well.  Other subsystems don't do anything at all, and I'm reduced to
+digging through git commit logs to see if I can find stuff when people
+report problems {cough SCSI}
+
+-----------
+
+Review cycle:
+
+ - patches go out for review, copying the authors of the patch and the
+   people who signed-off on the patch
+ - 48-72 hours to NAK the patch
+ - new stable release happens
 
 
 
