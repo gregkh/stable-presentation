@@ -1,0 +1,114 @@
+#!/usr/bin/env pinpoint
+[font=Sans 50px]
+[top]
+[text-align=left]
+#[bg.jpg]
+
+- [top] [text-align=center]
+<b>
+<span size='large'>The Stable Linux
+Kernel Tree</span>
+
+
+
+<span foreground='yellow' size='x-small'>Greg Kroah-Hartman</span>
+<span size='xx-small'><tt>gregkh@suse.de</tt></span>
+</b>
+
+-
+<span size='large'><tt>stable_kernel_rules.txt </tt></span>
+
+• obviously correct and tested
+• not bigger than 100 lines
+• must fix only one thing
+• must fix a real bug
+• must fix a real problem
+• new device ids and quirks
+• must be in Linus's tree already
+
+-
+<span size='large'><tt>stable_kernel_rules.txt </tt></span>
+
+• "Cc: &lt;stable@kernel.org&gt;" to the 
+    Signed-off-by: area of the patch
+•  send git commit id to stable@kernel.org
+
+-
+<span size='large'>Two types of stable kernels</span>
+
+• "normal" Stable
+• Longterm
+
+-
+<span size='large'>"Normal" Stable</span>
+
+• Supported until a short time
+   (3-4 months)
+• Usually next kernel release + 1
+• Users must move on when dropped
+• Quicker release cycles
+
+-
+Longterm
+
+• Supported for years
+• Users know well in advance when
+   to move on.
+• Longer release cycles
+
+-
+2.6.27.y - longterm
+
+• "Enterprise" linux kernel
+• will be supported indefinitely
+• A 2.4 kernel replacement
+• maintained by XXXXXX
+
+-
+2.6.32.y - longterm
+
+• "Enterprise" linux kernel
+• will be supported indefinitely
+• maintained by greg k-h
+
+-
+2.6.33.y - Stable
+
+• "Real-time" Linux kernel
+• Will be supported until -rt
+   moves to a newer kernel
+• Maintained by Greg K-H
+
+-
+2.6.34.y - Longterm
+
+• "Embedded" Linux kernel
+• Unknown support length
+• Maintained by Greg K-H
+
+-
+2.6.35.y - Longterm
+
+• "Embedded" Linux kernel
+• Unknown support length
+• Maintained by Andi Kleen
+
+-
+2.6.38.y - Stable
+
+• Normal stable kernel
+• Only one more release before
+   end-of-life
+• Maintained by Greg K-H
+
+-
+2.6.39.y - Stable
+
+• Normal stable kernel
+• supported until 3.0.0 is released
+• Maintained by Greg K-H
+
+-
+
+- [black] [font=Sans 100px]
+ありがとう
