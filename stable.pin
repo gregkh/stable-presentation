@@ -8,15 +8,14 @@
 <b>
 <span size='large'>The Stable Linux
 Kernel Tree</span>
-
+</b>
 
 
 <span foreground='yellow' size='x-small'>Greg Kroah-Hartman</span>
 <span size='xx-small'><tt>gregkh@suse.de</tt></span>
-</b>
 
 -
-<span size='large'><tt>stable_kernel_rules.txt </tt></span>
+<b><span size='large'><tt>stable_kernel_rules.txt </tt></span></b>
 
 • obviously correct and tested
 • not bigger than 100 lines
@@ -27,20 +26,20 @@ Kernel Tree</span>
 • must be in Linus's tree already
 
 -
-<span size='large'><tt>stable_kernel_rules.txt </tt></span>
+<b><span size='large'><tt>stable_kernel_rules.txt </tt></span></b>
 
 • "Cc: &lt;stable@kernel.org&gt;" to the 
     Signed-off-by: area of the patch
 •  send git commit id to stable@kernel.org
 
 -
-<span size='large'>Two types of stable kernels</span>
+<b><span size='large'><b>2 types of stable kernels</b></span></b>
 
-• "normal" Stable
+• "Normal" Stable
 • Longterm
 
 -
-<span size='large'>"Normal" Stable</span>
+<b><span size='large'>"Normal" Stable</span></b>
 
 • Supported until a short time
    (3-4 months)
@@ -49,7 +48,7 @@ Kernel Tree</span>
 • Quicker release cycles
 
 -
-Longterm
+<b><span size='large'>Longterm</span></b>
 
 • Supported for years
 • Users know well in advance when
@@ -57,58 +56,58 @@ Longterm
 • Longer release cycles
 
 -
-2.6.27.y - longterm
+<b><span size='large'>2.6.27.y - longterm</span></b>
 
 • "Enterprise" linux kernel
 • will be supported indefinitely
 • A 2.4 kernel replacement
-• maintained by XXXXXX
+• maintained by Willy Tarreau (community)
 
 -
-2.6.32.y - longterm
+<b><span size='large'>2.6.32.y - longterm</span></b>
 
 • "Enterprise" linux kernel
 • will be supported indefinitely
-• maintained by greg k-h
+• maintained by Greg K-H (SUSE)
 
 -
-2.6.33.y - Stable
+<b><span size='large'>2.6.33.y - Stable</span></b>
 
 • "Real-time" Linux kernel
 • Will be supported until -rt
    moves to a newer kernel
-• Maintained by Greg K-H
+• Maintained by Greg K-H (SUSE)
 
 -
-2.6.34.y - Longterm
+<b><span size='large'>2.6.34.y - Longterm</span></b>
 
 • "Embedded" Linux kernel
 • Unknown support length
-• Maintained by Greg K-H
+• Maintained by Paul Gortmaker (WindRiver)
 
 -
-2.6.35.y - Longterm
+<b><span size='large'>2.6.35.y - Longterm</span></b>
 
 • "Embedded" Linux kernel
 • Unknown support length
-• Maintained by Andi Kleen
+• Maintained by Andi Kleen (Intel)
 
 -
-2.6.38.y - Stable
+<b><span size='large'>2.6.38.y - Stable</span></b>
 
 • Normal stable kernel
 • Only one more release before
    end-of-life
-• Maintained by Greg K-H
+• Maintained by Greg K-H (community)
 
 -
-2.6.39.y - Stable
+<b><span size='large'>2.6.39.y - Stable</span></b>
 
 • Normal stable kernel
 • supported until 3.0.0 is released
-• Maintained by Greg K-H
+• Maintained by Greg K-H (community)
 
--
+- [penguins.jpg][unscaled]empty slide
 
 - [black] [font=Sans 100px]
 ありがとう
