@@ -61,7 +61,8 @@ Kernel Tree</span>
 • "Enterprise" linux kernel
 • will be supported indefinitely
 • A 2.4 kernel replacement
-• maintained by Willy Tarreau (community)
+• maintained by Willy Tarreau
+  (community)
 
 -
 <b><span size='large'>2.6.32.y - longterm</span></b>
@@ -83,29 +84,24 @@ Kernel Tree</span>
 
 • "Embedded" Linux kernel
 • Unknown support length
-• Maintained by Paul Gortmaker (WindRiver)
+• Maintained by Paul Gortmaker
+  (WindRiver)
 
 -
 <b><span size='large'>2.6.35.y - Longterm</span></b>
 
 • "Embedded" Linux kernel
 • Unknown support length
-• Maintained by Andi Kleen (Intel)
+• Maintained by Andi Kleen
+  (Intel)
 
 -
-<b><span size='large'>2.6.38.y - Stable</span></b>
+<b><span size='large'>3.0.y - Stable</span></b>
 
 • Normal stable kernel
-• Only one more release before
-   end-of-life
-• Maintained by Greg K-H (community)
-
--
-<b><span size='large'>2.6.39.y - Stable</span></b>
-
-• Normal stable kernel
-• supported until 3.0.0 is released
-• Maintained by Greg K-H (community)
+• supported until 3.1 is released
+• Maintained by Greg K-H
+  (community)
 
 - [images/penguins.jpg][unscaled]empty slide
 
