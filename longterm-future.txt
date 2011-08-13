@@ -59,6 +59,8 @@ would work for you and your company, or not at all:
   the last one after a new release happens.)  These releases are best
   for products that require new hardware updates (desktop distros,
   community distros, fast-moving embedded distros (like Yocto)).
+- the normal -stable rules apply to these -longterm kernels as described
+  in Documentation/stable_kernel_rules.txt
 
 This means that there are 2 -longterm kernels being maintained at the
 same time, and one -stable kernel.  I'm volunteering to do this work, as
