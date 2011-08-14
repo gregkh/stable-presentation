@@ -1,5 +1,13 @@
 Future of the -longterm kernel releases.
 
+tl;dr;
+	* -stable kernel releases stay the same
+	* this proposal is how we pick the -longterm releases
+	* -longterm kernels will be picked every year, and maintained
+	* for 2 years before being dropped.
+	* the same Documentation/stable_kernel_rules.txt will apply for
+	* -longterm kernels, as before.
+
 History:
 
 2.6.16 became a "longterm" kernel because my day job (at SUSE) picked
@@ -22,8 +30,13 @@ of the major "enterprise" and "stable" distro releases are based on the
 Last year, two different community members (Andi and Paul) asked me
 if they could maintain the 2.6.34 and 2.6.35 kernels as -longterm kernel
 releases as their companies needed this type of support.  I agreed, and
-they have done a great job at this, but it doesn't seem that any other
-groups other than their individual companies are using these kernels.
+they have done a great job at this.
+
+Andi reports that the 2.6.35 kernel is being used by a number of
+different distros, but they will be phased out as their support lifetime
+expires.  There are also a number of embedded users of the kernel as
+well as some individual ones.  So that -longterm kernel is having a lot
+of benefit for a wide range of users.
 
 
 Today:
