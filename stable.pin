@@ -103,9 +103,16 @@ Kernel Tree</span>
 • Maintained by Greg K-H
   (community)
 
-- [images/stable_kernel_releases.png]empty slide
+-
+<b><span size='large'>Longterm kernel future</span></b>
+
+• One new -longterm kernel a year
+• maintained for two years
+• same stable kernel rules apply
+
+#- [images/stable_kernel_releases.png]empty slide
 
 - [images/penguins.jpg][unscaled]empty slide
 
-- [black] [font=Sans 100px]
-ありがとう
+#- [black] [font=Sans 100px]
+#ありがとう
